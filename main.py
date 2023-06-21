@@ -29,7 +29,7 @@ from discord.ext import commands
 #        Passel so that all pinned messages get sent to the pins archive channel.
 
 # TODO change command here if you want to use another command, replace p. with anything you want inside the single ('') quotes
-client = commands.Bot(command_prefix='p.',
+client = commands.Bot(command_prefix='ksrpb.',
                       status='Online', case_insensitive=True)
 client.remove_command("help")
 
@@ -39,16 +39,16 @@ mode = 2
 # TODO 
 # sendall is set to 0 by default, change to 1 if you want
 # the bot to send all pinned messages to the pins channel
-sendall = 0
+sendall = 1
 
 # TODO 
 # replace the 0 with the pins channel ID for your sever
-pins_channel = 948375476685111296/954794285222486046
+pins_channel = 1121091228008714310
 
 # TODO
 # add any black listed channel IDs as a list separated by a comma (,)
 # a good idea is to add admin channels to this
-blacklisted_channels = []
+blacklisted_channels = [1081546722557313026,1077917843879903252,879262327046819891,879593975969886229,871747723479629899,871747812478550017,878992246496694282,915137642163740712,915137652141989929,884329844895260702,884310816134942730,871750146717786113,968120801268211742]
 
 # discord embed colors
 EMBED_COLORS = [
@@ -76,7 +76,7 @@ EMBED_COLORS = [
 # When the bot is ready following sets the status of the bot
 @client.event
 async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+    print('logged in as {0.user}'.format(client))
 
 
 # Command to check what the settings of the bot
