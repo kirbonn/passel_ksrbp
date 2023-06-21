@@ -34,7 +34,7 @@ client = commands.Bot(command_prefix='ksrpb.',
 client.remove_command("help")
 
 # TODO change mode to 1 or 2 here
-mode = 2
+mode = 1
 
 # TODO 
 # sendall is set to 0 by default, change to 1 if you want
